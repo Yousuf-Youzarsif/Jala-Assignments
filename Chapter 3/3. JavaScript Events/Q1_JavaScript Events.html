@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q1_JavaScript Events</title>
+  </head>
+  <body>
+    <button id="showDateTimeBtn">Show Date and Time</button>
+    <p id="dateTimeDisplay"></p>
+
+    <script>
+      const button = document.getElementById("showDateTimeBtn");
+      const display = document.getElementById("dateTimeDisplay");
+
+      button.addEventListener("click", () => {
+        const dateNTime = new Date();
+        const dateTimeStr = dateNTime.toLocaleString();
+        display.textContent = dateTimeStr;
+      });
+    </script>
+  </body>
+</html>

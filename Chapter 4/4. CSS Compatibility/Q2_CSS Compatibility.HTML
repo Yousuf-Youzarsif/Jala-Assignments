@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q2_CSS Compatibility</title>
+    <style>
+      .list-container li {
+        margin: 10px;
+      }
+      .list-container li:nth-child(1) {
+        list-style-type: disc;
+      }
+      .list-container li:nth-child(2) {
+        list-style-type: circle;
+      }
+      .list-container li:nth-child(3) {
+        list-style-type: square;
+      }
+      .list-container li:nth-child(4) {
+        list-style-type: decimal;
+      }
+      .list-container li:nth-child(5) {
+        list-style-type: lower-alpha;
+      }
+      .list-container li:nth-child(6) {
+        list-style-type: upper-alpha;
+      }
+      .list-container li:nth-child(7) {
+        list-style-type: lower-roman;
+      }
+
+      .list-container li:nth-child(8) {
+        list-style-type: upper-roman;
+      }
+      .list-container li:nth-child(9) {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="list-container">
+      <li>Disc Style</li>
+      <li>Circle Style</li>
+      <li>Square Style</li>
+      <li>Decimal Style</li>
+      <li>Lower Alpha Style</li>
+      <li>Upper Alpha Style</li>
+      <li>Lower Roman Style</li>
+      <li>Upper Roman Style</li>
+      <li>No Bullet Style</li>
+    </ul>
+  </body>
+</html>

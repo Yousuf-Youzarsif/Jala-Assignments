@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q2_CSS Page Adjustments</title>
+    <style>
+      .container {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 20px;
+      }
+
+      .hidden {
+        visibility: hidden;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      .visible {
+        visibility: visible;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      .collapse {
+        visibility: collapse;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      .display-none {
+        display: none;
+        border: 1px solid red;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      .display-inline {
+        display: inline;
+        border: 1px solid green;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      .display-block {
+        display: block;
+
+        border: 1px solid blue;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      .display-contents {
+        display: contents;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      .display-list-item {
+        display: list-item;
+        margin: 10px 0;
+      }
+
+      .demo-container {
+        list-style-type: none; /* Remove bullet points for demo */
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Visibility Examples</h2>
+      <div class="hidden">Visibility: Hidden</div>
+      <div class="visible">Visibility: Visible</div>
+      <div class="collapse">
+        Visibility: Collapse (Note: Effective only in table contexts)
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Display Examples</h2>
+
+      <!-- remove the element -->
+      <div class="display-none">Display: None</div>
+      <div class="display-inline">Display: Inline</div>
+      <div class="display-block">Display: Block</div>
+      <div class="display-contents">Display: Contents</div>
+      <div class="display-list-item">Display: List-item</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q3_CSS Page Adjustments</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 1000vh;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      a {
+        color: black;
+      }
+      .rainbow {
+        width: 100%;
+        height: 100vh;
+      }
+      .btn {
+        width: 100%;
+        height: 3rem;
+        font-weight: 900;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-transform: capitalize;
+        display: grid;
+        place-items: center;
+      }
+      .red {
+        background-color: red;
+      }
+      .orange {
+        background-color: orange;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .green {
+        background-color: green;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .indigo {
+        background-color: indigo;
+      }
+      .violet {
+        background-color: violet;
+      }
+      .pink {
+        background-color: pink;
+      }
+      .cyan {
+        background-color: cyan;
+      }
+      .magenta {
+        background-color: magenta;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn" id="top">
+      <a href="#bottom">click to go to bottom of page </a>
+    </div>
+    <div class="rainbow red"></div>
+    <div class="rainbow orange"></div>
+    <div class="rainbow yellow"></div>
+    <div class="rainbow green"></div>
+    <div class="rainbow blue"></div>
+    <div class="rainbow indigo"></div>
+    <div class="rainbow violet"></div>
+    <div class="rainbow pink"></div>
+    <div class="rainbow cyan"></div>
+    <div class="rainbow magenta"></div>
+    <div class="btn" id="bottom">
+      <a href="#top"> click to go to top of page </a>
+    </div>
+  </body>
+</html>

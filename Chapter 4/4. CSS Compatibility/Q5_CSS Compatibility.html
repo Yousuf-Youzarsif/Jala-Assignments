@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q5_CSS Compatibility</title>
+    <style>
+      body {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      img {
+        border-radius: 10px;
+        margin: 20px;
+        width: 80vw;
+        height: 250px;
+        object-fit: cover;
+      }
+      video {
+        border-radius: 10px;
+        width: 80vw;
+        height: 500px;
+        object-fit: cover;
+      }
+      .img2,
+      .img3,
+      .vid2,
+      .vid3 {
+        display: none;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 80vw;
+      }
+      .box {
+        padding: 20px 30px;
+        height: 150px;
+        border-radius: 10px;
+      }
+      .box1 {
+        background-color: crimson;
+      }
+      .box2 {
+        background-color: darkblue;
+      }
+      .box3 {
+        background-color: coral;
+      }
+      .box4 {
+        background-color: darkmagenta;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .box1 {
+          background-color: darkmagenta;
+        }
+        .box2 {
+          background-color: crimson;
+        }
+        .box3 {
+          background-color: darkblue;
+        }
+        .box4 {
+          background-color: coral;
+        }
+        .img2,
+        .vid2 {
+          display: block;
+        }
+        .img1,
+        .vid1 {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .box1 {
+          background-color: darkblue;
+        }
+        .box2 {
+          background-color: darkmagenta;
+        }
+        .box3 {
+          background-color: coral;
+        }
+        .box4 {
+          background-color: crimson;
+        }
+        .img2,
+        .vid2 {
+          display: none;
+        }
+        .img3,
+        .vid3 {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+    </div>
+    <div class="image">
+      <img
+        src="../3. HTML5- Semantic Elements/elephant.jpg"
+        class="img1"
+        width="500px"
+      />
+      <img src="../1. CSS Basics/Q2.jpg" class="img2" width="500px" />
+      <img
+        src="../3. CSS Effects/Q1_CSS Effects.jpg"
+        class="img3"
+        width="500px"
+      />
+    </div>
+
+    <video autoplay loop muted class="vid1">
+      <source
+        src="https://videos.pexels.com/video-files/26730260/11994815_2048_1080_30fps.mp4"
+      />
+    </video>
+
+    <video autoplay loop muted class="vid2">
+      <source
+        src="https://videos.pexels.com/video-files/1851190/1851190-uhd_2560_1440_25fps.mp4"
+      />
+    </video>
+
+    <video autoplay loop muted class="vid3">
+      <source
+        src="https://videos.pexels.com/video-files/855915/855915-hd_1920_1080_30fps.mp4"
+      />
+    </video>
+  </body>
+</html>

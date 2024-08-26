@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>non-Semantic</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .header,
+      .nav,
+      .section,
+      .article,
+      .aside,
+      .footer,
+      .figcaption {
+        margin: 10px;
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+      }
+      .header {
+        background-color: #a8d8ea;
+        height: 80px;
+      }
+      .nav {
+        background-color: #f6c7c7;
+        height: 50px;
+      }
+      .section {
+        background-color: #e8f0b9;
+        float: left;
+        width: 50%;
+        height: 300px;
+      }
+      .article {
+        background-color: #e8d9f0;
+        float: left;
+        width: 50%;
+        height: 300px;
+      }
+      .aside {
+        background-color: #f0e5b9;
+        float: right;
+        width: 45%;
+        height: 620px;
+      }
+      .footer {
+        background-color: #b9f0b9;
+        clear: both;
+        height: 50px;
+      }
+      .figure,
+      .hgroup,
+      .mark {
+        margin: 10px;
+        border-radius: 10px;
+      }
+      .figure img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .figcaption {
+        margin: 0;
+        width: 100%;
+        height: 80px;
+        background-color: #eff0b9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">Header Content</div>
+    <div class="nav">Navigation Links</div>
+    <div class="section">Section Content</div>
+    <div class="aside">Sidebar Content</div>
+    <div class="article">Article Content</div>
+    <div class="hgroup">
+      <h1>Stock Free Images (hgroup content)</h1>
+      <p>by Syed Talha Ahmed (hgroup content)</p>
+    </div>
+    <div class="mark">1, Elephant (Mark content)</div>
+
+    <div class="figure">
+      <img src="elephant.jpg" alt="Elephant at sunset" />
+      <div class="figcaption">An elephant at sunset (Figure Content)</div>
+      <p>
+        Photo was Clicked on
+        <time datetime="2021-12-20">December 20th, 2021</time> at
+        <time datetime="18:00">6:00pm</time>. (time content)
+      </p>
+    </div>
+    <div class="footer">Footer Content</div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q3_JavaScript Basics</title>
+  </head>
+  <body>
+    <div id="output"></div>
+
+    <script>
+      const person = {
+        firstName: "Syed Talha",
+        lastName: "Ahmed",
+        age: 20,
+        occupation: "Frontend Developer",
+      };
+
+      function displayObjectProperties() {
+        const outputDiv = document.getElementById("output");
+        for (const key in person) {
+          outputDiv.innerHTML += `<p>${key}: ${person[key]}</p>`;
+        }
+      }
+
+      displayObjectProperties();
+    </script>
+  </body>
+</html>

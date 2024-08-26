@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q5_JavaScript Access and Properties</title>
+  </head>
+  <body>
+    <script>
+      //in this assignment I have take some help from the internet
+      function Person(name) {
+        this.name = name;
+      }
+
+      Person.prototype.sayHello = function () {
+        console.log(`Hello, my name is ${this.name}`);
+      };
+
+      const talha = new Person("Syed Talha Ahmed");
+      talha.sayHello();
+
+      const ravi = new Person("Ravi");
+      ravi.sayHello();
+    </script>
+  </body>
+</html>

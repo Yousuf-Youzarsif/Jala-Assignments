@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q2_CSS Effects</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: grid;
+        place-items: center;
+        height: 90vh;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      img {
+        max-width: 30vw;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        animation: fadeIn 2s ease-out;
+      }
+
+      img:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        transform: scale(1.05);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .pagination {
+        margin-top: 20px;
+      }
+
+      .page-link {
+        text-decoration: none;
+        color: #333;
+        background-color: #ddd;
+        padding: 10px 15px;
+        margin: 0 5px;
+        border-radius: 5px;
+        display: inline-block;
+        transition: 0.3s ease;
+      }
+
+      .page-link:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.1);
+      }
+
+      .no-space .page-link {
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="Q1_CSS Effects.jpg" />
+
+      <div class="pagination">
+        <a href="#" class="page-link">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link">3</a>
+        <a href="#" class="page-link">4</a>
+      </div>
+      <div class="pagination no-space">
+        <a href="#" class="page-link">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link">3</a>
+        <a href="#" class="page-link">4</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q2_JavaScript Basics</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      #fruit-list {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fruit Sorting</h1>
+    <button onclick="sortFruits()">Sort Fruits in Descending Order</button>
+
+    <ul id="fruit-list"></ul>
+
+    <script>
+      const fruits = ["Banana", "Apple", "Cherry", "Mango", "Pineapple"];
+
+      function displayFruits() {
+        let fruitListContainer = document.getElementById("fruit-list");
+        fruitListContainer.innerHTML = "";
+        fruits.forEach((fruit) => {
+          const li = document.createElement("li");
+          li.textContent = fruit;
+          fruitListContainer.appendChild(li);
+        });
+      }
+
+      function sortFruits() {
+        fruits.sort((a, b) => b.localeCompare(a));
+        displayFruits();
+      }
+      displayFruits();
+    </script>
+  </body>
+</html>

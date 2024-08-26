@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q1_CSS Page Adjustments</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease;
+      }
+
+      .border-box {
+        border: 5px solid black;
+        width: 50%;
+        height: 50%;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="border-box"></div>
+
+    <script>
+      const borderBox = document.querySelector(".border-box");
+
+      borderBox.addEventListener("mouseover", () => {
+        document.body.style.backgroundColor = "red";
+      });
+
+      borderBox.addEventListener("mouseout", () => {
+        document.body.style.backgroundColor = "#ffffff";
+      });
+    </script>
+  </body>
+</html>

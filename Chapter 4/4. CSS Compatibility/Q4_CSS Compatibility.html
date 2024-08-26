@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q3_CSS Compatibility</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+        width: 90%;
+        max-width: 800px;
+        padding: 20px;
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        border-radius: 8px;
+        transition: 0.3s ease;
+      }
+
+      .item:hover {
+        background-color: #e0e0e0;
+        transform: scale(1.05);
+      }
+
+      .apple {
+        background-color: #ff0000;
+      }
+
+      .banana {
+        background-color: #ffff00;
+      }
+
+      .orange {
+        background-color: #ff6f00;
+      }
+
+      .grape {
+        background-color: #6a1b9a;
+      }
+
+      .kiwi {
+        background-color: #4caf50;
+      }
+
+      .mango {
+        background-color: #ff9800;
+      }
+
+      .pineapple {
+        background-color: #fdd835;
+      }
+
+      .blueberry {
+        background-color: #2196f3;
+      }
+
+      .watermelon {
+        background-color: #d32f2f;
+      }
+      .strawberry {
+        background-color: #e91e63;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item apple">Apple</div>
+      <div class="item banana">Banana</div>
+      <div class="item orange">Orange</div>
+      <div class="item grape">Grape</div>
+      <div class="item kiwi">Kiwi</div>
+      <div class="item mango">Mango</div>
+      <div class="item pineapple">Pineapple</div>
+      <div class="item blueberry">Blueberry</div>
+      <div class="item watermelon">Watermelon</div>
+      <div class="item strawberry">Strawberry</div>
+    </div>
+  </body>
+</html>

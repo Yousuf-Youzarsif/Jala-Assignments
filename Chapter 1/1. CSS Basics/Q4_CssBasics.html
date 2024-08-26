@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q4_CssBasics</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* Common styles classes */
+      .t-style {
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        text-transform: capitalize;
+      }
+      .f-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* main style */
+      .container {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .pixel-width-height {
+        width: 250px; /* width in pixels */
+        height: 150px; /* height in pixels */
+        background-color: crimson;
+      }
+      .percent-width-height {
+        width: 30%; /* width in % */
+        height: 30%; /* height in % */
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container f-center">
+      <div class="pixel-width-height t-style f-center">
+        <p>pixel dimensions(px)</p>
+      </div>
+      <div class="percent-width-height t-style f-center">
+        <p>percentage dimensions(%)</p>
+      </div>
+    </div>
+  </body>
+</html>

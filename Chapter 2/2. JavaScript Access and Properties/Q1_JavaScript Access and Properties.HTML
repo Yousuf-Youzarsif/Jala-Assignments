@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q1_JavaScript Access and Properties</title>
+    <style>
+      #Button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="Button" onclick="hideButton(this)">
+      Click me to disappear
+    </button>
+
+    <script>
+      function hideButton(btnElm) {
+        btnElm.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

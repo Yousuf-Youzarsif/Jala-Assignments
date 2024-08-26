@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q3_CSS Effects</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 3000px;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        position: relative;
+        height: 670px;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 10px;
+        background-color: #f0f0f0;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        margin: 10px;
+        display: inline-block;
+        text-align: center;
+        line-height: 100px;
+        color: rgb(44, 44, 44);
+        font-weight: 700;
+      }
+      .static {
+        position: static;
+        background-color: lightblue;
+      }
+      .relative {
+        position: relative;
+        top: 30px;
+        left: 10px;
+        background-color: lightgreen;
+      }
+      .absolute {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: lightcoral;
+      }
+      .fixed {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: rgb(168, 166, 166);
+      }
+      .sticky {
+        position: sticky;
+        top: 10px;
+        background-color: lightpink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box static">Static</div>
+      <div class="box sticky">Sticky</div>
+      <div class="box absolute">Absolute</div>
+      <div class="box relative">Relative</div>
+    </div>
+
+    <div class="box fixed">Fixed</div>
+  </body>
+</html>

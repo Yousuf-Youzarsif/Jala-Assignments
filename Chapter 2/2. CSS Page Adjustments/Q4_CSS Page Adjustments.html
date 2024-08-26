@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q4_CSS Page Adjustments</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #f0f0f0;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: #3498db;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        border: 5px solid #2980b9;
+      }
+
+      .padding-box {
+        padding: 20px;
+      }
+
+      .margin-box {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box padding-box">Padding Box</div>
+      <div class="box">Normal Box</div>
+      <div class="box margin-box">Margin Box</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormElements</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .f-center {
+        display: flex;
+      }
+      form {
+        margin: 20px;
+        padding: 20px;
+        max-width: 800px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .form-group input[type="text"],
+      .form-group input[type="password"],
+      .form-group input[type="email"],
+      .form-group input[type="number"],
+      .form-group input[type="date"],
+      .form-group input[type="time"],
+      .form-group input[type="month"],
+      .form-group input[type="week"],
+      .form-group input[type="range"],
+      .form-group input[type="file"] {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+      .form-group input[type="range"] {
+        width: calc(100% - 16px); /* Subtracting padding */
+      }
+      .form-group input[type="file"] {
+        padding: 0;
+      }
+      .form-group input[type="radio"],
+      .form-group input[type="checkbox"] {
+        margin-right: 5px;
+        margin-top: -5px;
+      }
+      .form-group button,
+      .form-group input[type="submit"],
+      .form-group input[type="reset"] {
+        padding: 10px 15px;
+        margin-right: 5px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .form-group input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+      }
+      .form-group input[type="reset"] {
+        background-color: #f44336;
+        color: white;
+      }
+      .form-group button {
+        background-color: #2196f3;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <marquee behavior="alternate" direction="left" scrollamount="20">
+      <p>
+        Please fill in all the inputs. The form has the target="_blank"
+        attribute. And marquee had alternate behavior
+      </p>
+    </marquee>
+    <form target="_blank">
+      <!-- Text and Password Inputs with Attributes -->
+      <div class="form-group">
+        <label for="username">Username (readonly):</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          value="Syed Talha Ahmed"
+          readonly
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password"
+          >Password (required, max length 15, autofocus):</label
+        >
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          autofocus
+          maxlength="15"
+          required
+        />
+      </div>
+
+      <!-- Email Input with Attributes -->
+      <div class="form-group">
+        <label for="email">Email (min length 8,required):</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          minlength="8"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <!-- Radio Buttons -->
+      <div class="form-group f-center">
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+
+      <!-- Checkboxes -->
+      <div class="form-group">
+        <label>Interests:</label>
+        <div class="f-center">
+          <input
+            type="checkbox"
+            id="reading"
+            name="interests"
+            value="reading"
+          />
+          <label for="reading">Reading</label>
+        </div>
+        <div class="f-center">
+          <input
+            type="checkbox"
+            id="traveling"
+            name="interests"
+            value="traveling"
+          />
+          <label for="traveling">Traveling</label>
+        </div>
+        <div class="f-center">
+          <input type="checkbox" id="sports" name="interests" value="sports" />
+          <label for="sports">Sports</label>
+        </div>
+      </div>
+
+      <!-- HTML5 Input Types with Attributes -->
+      <div class="form-group">
+        <label for="number">Number (min 1, max 100):</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="1"
+          max="100"
+          placeholder="Enter a number"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="range">Range (min 0, max 100):</label>
+        <input
+          type="range"
+          id="range"
+          name="range"
+          min="0"
+          max="100"
+          step="1"
+          value="50"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color" />
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date (required):</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+
+      <div class="form-group">
+        <label for="file">File (disabled):</label>
+        <input type="file" id="file" name="file" disabled />
+      </div>
+
+      <div class="form-group">
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" />
+      </div>
+
+      <div class="form-group">
+        <label for="month">Month:</label>
+        <input type="month" id="month" name="month" />
+      </div>
+
+      <div class="form-group">
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week" />
+      </div>
+
+      <!-- Submit and Reset Buttons -->
+      <div class="form-group">
+        <button type="button" onclick="alert('Hello! Jala Academy')">
+          Click Me
+        </button>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15225.223561995981!2d78.3856519!3d17.4450674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9132b0c758d1%3A0x75c355c0399d9042!2sJALA%20Academy%20Private%20Limited!5e0!3m2!1sen!2sin!4v1724211930664!5m2!1sen!2sin"
+      width="100%"
+      height="1000px"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q2_JavaScript Events</title>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="textBox">Enter text:</label>
+      <input type="text" id="textBox" />
+      <span id="errorMsg"></span>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      document.getElementById("myForm").addEventListener("submit", (event) => {
+        const textBox = document.getElementById("textBox");
+        const errorMsg = document.getElementById("errorMsg");
+        if (textBox.value === "") {
+          event.preventDefault();
+          errorMsg.textContent = "Text box cannot be left empty.";
+        } else {
+          errorMsg.textContent = "";
+        }
+      });
+    </script>
+  </body>
+</html>

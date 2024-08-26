@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q1_CSS Compatibility</title>
+    <style>
+      .fixed-table {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+      }
+      .auto-table {
+        width: 100%;
+        table-layout: auto;
+        border-collapse: collapse;
+      }
+
+      .fixed-table th,
+      .fixed-table td,
+      .auto-table th,
+      .auto-table td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Table with table-layout: fixed</h2>
+    <table class="fixed-table">
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+      <tr>
+        <td>Short</td>
+        <td>Some longer text</td>
+        <td>Even longer text that might overflow</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>More data</td>
+        <td>Additional data that is really long and might be cut off</td>
+      </tr>
+    </table>
+
+    <h2>Table with table-layout: auto</h2>
+    <table class="auto-table">
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+      <tr>
+        <td>Short</td>
+        <td>Some longer text</td>
+        <td>Even longer text that might overflow</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>More data</td>
+        <td>Additional data that is really long and might be cut off</td>
+      </tr>
+    </table>
+  </body>
+</html>
